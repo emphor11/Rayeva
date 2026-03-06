@@ -32,7 +32,7 @@ export class AIService {
         model?: string;
         maxRetries?: number;
     }): Promise<AIResponse<T>> {
-        const { systemPrompt, userPrompt, jsonSchema, metadata, model = 'gemini-2.5-flash', maxRetries = 3 } = params;
+        const { systemPrompt, userPrompt, jsonSchema, metadata, model = 'gemini-2.0-flash', maxRetries = 3 } = params;
         const startTime = Date.now();
         let attempts = 0;
 
